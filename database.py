@@ -24,6 +24,4 @@ def get_session():
         yield session
 
 
-
 create_db_and_tables()
-sql_url = "postgresql://datahive_user:zWypeCCigUzMZsdCSVujxnv409UEciIU@dpg-cqh167ks1f4s73bhcr60-a.virginia-postgres.render.com/datahive"
