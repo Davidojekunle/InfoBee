@@ -12,7 +12,7 @@ from models import Admin, DataAnalysis, Files, Notification, Payment, UserManage
 # from models.visualizations import Visualization
 
 # Define the database URL and create the engine
-sql_url = "postgresql://datahive_user:zWypeCCigUzMZsdCSVujxnv409UEciIU@dpg-cqh167ks1f4s73bhcr60-a.virginia-postgres.render.com/datahive"
+sql_url = "sqlite:///Archive.db"
 engine = create_engine(sql_url, echo=True)
 
 def create_db_and_tables():
