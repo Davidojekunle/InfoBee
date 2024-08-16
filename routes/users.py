@@ -10,8 +10,6 @@ import mimetypes
 import os
 import shutil
 from utils.automate_graph import create_visuals
-from PIL import Image, ImageTk
-import io
 from schemas.users import UserUpdate, PasswordChange
 
 users_router = APIRouter()
