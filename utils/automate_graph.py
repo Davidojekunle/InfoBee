@@ -37,15 +37,7 @@ def create_visuals(file, user_name, error_message=None, attempt=1):
     Insights: {data_insights}
 
     Steps to Follow:
-    1. Restructure the Data:
-       * Convert the original dataset into a clean and structured format suitable for analysis. Ensure the data is in a dictionary format like this:
 
-       new_data = {{
-           'column1': [value1, value2, ...],
-           'column2': [value1, value2, ...],
-           ...
-       }}
-       data = pd.DataFrame(new_data)
 
     2. Data Cleaning and Preparation:
        * Handle missing values effectively.
@@ -64,6 +56,23 @@ def create_visuals(file, user_name, error_message=None, attempt=1):
           * Are there any noticeable outliers or anomalies?
           * How do different categories or groups compare?
           * What are the correlations between key variables?
+       * Follow these additional plotting rules:
+          * Maximize the data-to-ink ratio by removing non-essential elements.
+          * Maintain consistent fonts, colors, and styles across all charts.
+          * Avoid 3D effects in charts.
+          * Round numbers to an appropriate number of decimal places for clarity.
+          * For bar and column charts, always start the y-axis at zero.
+          * Use color or other visual cues to highlight important data points.
+          * Ensure charts are accessible to color-blind individuals.
+          * For scatter plots with many data points, use transparency or jittering to prevent overplotting.
+          * Use logarithmic scales when data spans several orders of magnitude.
+          * For pie charts:
+             - Limit to 2-3 categories, maximum 5-6 if necessary.
+             - Group small categories into an "Other" category if needed.
+             - Order slices from largest to smallest, starting from 12 o'clock and moving clockwise.
+             - Use clear contrasting colors for easy distinction.
+             - Label slices directly when possible, instead of using a legend.
+             - Consider using a donut chart for a more modern and readable alternative.
 
     4. Return Only the Python Code:
        * Generate the Python code that follows the above steps, without any additional explanations or comments.
